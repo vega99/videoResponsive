@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(22, 24, 43);
+    color: white;
+    font-size: 10px;
+    position: sticky;
+    top:0;
+
+}
+.contenedor{
+    width: 100%;
+    height: auto;
+}
+
+.video{
+    width: 100%;
+    height: 300px;
+    background-color: brown;
+}
+
+.video-play{
+    width: 100%;
+    height: 200px;
+    background-color: darkgrey;
+    margin-bottom: 4px;
+}
+.video-titulo{
+    font-size: 10px;
+    display: grid;
+    grid-template-rows: repeat(4, 20px);
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 5px;
+    margin-left: 10px;
+}
+.titulo{
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+.com, .share{
+    text-align: center;
+}
+.f{
+    grid-column: 1 / -1;
+    grid-row: 2;
+}
+.ag{
+    grid-row: 3;
+    grid-column: 1 / 3;
+    font-size: 10px;
+    width: 110px;
+    height: 21px;
+}
+
+
+.video-titulo .b1{
+    grid-row: 4;
+    width: 69px;
+}
+.video-titulo .b2{
+    grid-row: 4;
+    width: 69px;
+}
+.video-titulo .b3{
+    grid-row: 4;
+    width: 69px;
+}
+.video-titulo .r{
+    grid-row: 4;
+    width: 69px;
+}
+
+
+.video-titulo button{
+    cursor: pointer;
+}
+.coment{
+    width: 100%;
+    height: auto;
+    background-color: chartreuse;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-row-gap: 10px;
+   
+}
+
+.comentarios{
+    width: 100%;
+    height: 200px;
+    background-color: cornsilk;
+}
+
+.sugerencia{
+    width: 100%;
+    height: 200px;
+    background-color: darkgreen;
+}
+
+@media screen and (min-width: 768px){
+    .coment{
+        grid-template-columns: auto auto;
+        grid-column-gap: 10px;
+    }
+}
+@media screen and (min-width: 1000px){
+    .nav{
+        width: 20%;
+        height: 100vh;
+        flex-grow: 1;
+    }
+    .flex{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contenedor{
+        width: 80%;
+        overflow: scroll;
+    }
+}
