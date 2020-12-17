@@ -8,6 +8,7 @@
 .flex{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .nav{
@@ -67,8 +68,9 @@ h1::before{
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    display: inline-block;
 }
-.user{
+.play-grid .user{
     align-self: center;
     margin-bottom: 5px;
 }
@@ -94,7 +96,7 @@ a{
 
 
 .contenedor{
-    width: 100%;
+    width: 100vw;
     height: auto;
 }
 
@@ -199,7 +201,6 @@ a{
 .coment{
     width: 100%;
     height: auto;
-    background-color: chartreuse;
     padding: 10px;
     display: grid;
     grid-template-rows: auto auto;
@@ -209,13 +210,64 @@ a{
 
 .comentarios{
     width: 100%;
-    height: 200px;
-    background-color: cornsilk;
+    max-height: 300px; 
+    overflow-y: scroll;
 }
+.comentarios .escribir{
+    background-color: #bbbdbd;
+    height: 25px;
+    margin-left: 5px;
+    border-radius: 5px;
+    width: 95%;
+} 
+.comentarios .escribir img{
+    width: 25px;
+    height:auto;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+.comentarios .escribir input{
+    border-radius: 5px;
+   width: 90%;
+   background-color: #bbbdbd;
+   border: none;
+   outline: none;
+}
+.comentario-user{
+    display: flex;
+    margin: 10px 0;
+}
+.nombre-text{
+    margin-left: 10px;
+}
+.comentario-user p{
+    font-size: 10px;
+    
+}
+
 
 .sugerencia{
     width: 100%;
-    height: 200px;
-    background-color: darkgreen;
+    max-height: 300px; 
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+.sugerencia h5{
+    align-self: center;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+figure{
+    align-self: center;
+    margin-bottom: 10px;
+}
+figure img{
+    width: 280px;
+    height: auto;
+    border-radius: 10px;
+}
+figcaption{
+    font-size: 10px;
 }
 

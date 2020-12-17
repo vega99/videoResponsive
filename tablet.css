@@ -13,10 +13,10 @@
         margin-right: 150px;
     }
     .coment{
-        grid-template-columns: auto auto;
-        grid-template-rows: minmax(500px, auto);
-        grid-column-gap: 10px;
-        min-height: 600px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-column-gap: 5px;
+        min-height: 300px;
     }
     .video-titulo{
         grid-template-rows: repeat(2, 20px) 30px;
@@ -67,3 +67,20 @@
         margin-bottom: 10px;
     }
 
+    .comentario-user p{
+        font-size: 15px;
+    }
+
+    figcaption{
+        font-size: 12px;
+    }
+    .comentarios{
+        width: 100%;
+        max-height: 600px; 
+        overflow: scroll;
+    }
+
+    .sugerencia{
+        max-height: 600px;
+        overflow: scroll;
+    }
