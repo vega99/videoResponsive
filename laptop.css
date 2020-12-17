@@ -64,16 +64,3 @@
         background-size: cover;
     }
     
-    .pos{
-        font-size: 25px;
-    }
-    .post{
-        font-size: 45px;
-    }
-    .video-play .sombra{
-        height: 600px;
-    }
-    
-    .contenedor{
-        overflow: auto;
-    }
