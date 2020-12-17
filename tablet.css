@@ -52,10 +52,28 @@
         width: 100px;
     }
     .video-play{
-        height: 300px;
+        height: 500px;
+    }
+    .video-play figure{
+        background-image: url("./Imgs/droneflyernick-5d4JLCPWCXg-unsplash\ \(1\).jpg");
+        height: 500px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .video{
         height: auto;
         margin-bottom: 10px;
+    }
+
+    .pos{
+        font-size: 20px;
+    }
+    .post{
+        font-size: 40px;
+    }
+    .video-play .sombra{
+        height: 500px;
     }
     

@@ -5,7 +5,12 @@
     }
     .nav h1{
         align-self: start;
+        margin-top: 10px;
     }
+    .play-grid h3{
+        margin-top: 10px;
+    }
+
     .nav .icon{
         align-self: start;
         display: none;
@@ -48,8 +53,27 @@
     }
 
     .video-play{
-        height: 500px;
+        height: 600px;
     }
+    .video-play figure{
+        background-image: url("./Imgs/droneflyernick-5d4JLCPWCXg-unsplash\ \(2\).jpg");
+        height: 600px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .pos{
+        font-size: 25px;
+    }
+    .post{
+        font-size: 45px;
+    }
+    .video-play .sombra{
+        height: 600px;
+    }
+    
     .contenedor{
         overflow: auto;
     }
