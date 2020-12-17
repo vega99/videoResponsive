@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template Responsive</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="laptop.css" media="screen and (min-width: 1000px)">
     <script src="https://kit.fontawesome.com/da98b03e06.js" crossorigin="anonymous"></script> 
 </head>
 <body>
     <main class="flex">
         <nav class="nav">
             <h1 href="">Platzi Video</h1>
-            <div id="playlist">
-<!--                 <div class="playlist-grid">
-                    <h3 class="subtitle">Mi playlist</h3>
-                    <p class="">1</p>
-                    <span>5 Reasons To Choose A Notebook Over A computer</span>
-                    <p class="">2</p>
-                    <span>Get Around Easly With A New York Limousine Service</span>
-                    <p class="">3</p>
-                    <span>How To Cook A Tender Juicy Steak</span>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="" id="playlist">
+                <section class="flex-f">
+                    <div class="play-grid">
+                        <h3 class="subtitle">Mi playlist</h3>
+                        <p class="">1</p>
+                        <span>5 Reasons To Choose A Notebook Over A computer</span>
+                        <p class="">2</p>
+                        <span>Get Around Easly With A New York Limousine Service</span>
+                        <p class="">3</p>
+                        <span>How To Cook A Tender Juicy Steak</span>
                     <p class="">4</p>
                     <span>How To Remove Kidney Stones</span>
                     <p class="">5</p>
@@ -33,28 +39,31 @@
                     <p class="">9</p>
                     <span>How To Remove Kidney Stones</span>
                     <p class="">10</p>
-                    <span>The Science Of Superstitions</span>
-                    <h4>Playlists de amigos</h4>
-                    <div class="user">
-                        <img src="https://pbs.twimg.com/profile_images/1196498675738071041/b9m1QfW2_400x400.jpg" alt="">
+                    <span>The Science Of Superstitions</span>              
                     </div>
-                    <span class="user user-text" >Gordon Carrol</span>
-                    <div class="user" >
-                        <img src="https://pbs.twimg.com/profile_images/1196498675738071041/b9m1QfW2_400x400.jpg" alt="">
-                        
+                    <div class="play-grid">
+                        <h4>Playlists de amigos</h4>
+                        <div class="user">
+                            <img src="https://pbs.twimg.com/profile_images/1196498675738071041/b9m1QfW2_400x400.jpg" alt="">
+                        </div>
+                        <span class="user user-text" >Gordon Carrol</span>
+                        <div class="user" >
+                            <img src="https://pbs.twimg.com/profile_images/1196498675738071041/b9m1QfW2_400x400.jpg" alt="">
+                            
+                        </div>
+                        <span class="user user-text">Adeline Wikins</span>
+                        <div class="user" >
+                            <img src="https://pbs.twimg.com/profile_images/1196498675738071041/b9m1QfW2_400x400.jpg" alt="">
+                            
+                        </div>
+                        <span class="user user-text">John wheeler</span>
+                        <div class="user" >
+                            <img src="https://pbs.twimg.com/profile_images/1196498675738071041/b9m1QfW2_400x400.jpg" alt="">
+                            
+                        </div>
+                        <span class="user user-text"  class="user">Katherin Nelson</span>
                     </div>
-                    <span class="user user-text">Adeline Wikins</span>
-                    <div class="user" >
-                        <img src="https://pbs.twimg.com/profile_images/1196498675738071041/b9m1QfW2_400x400.jpg" alt="">
-                        
-                    </div>
-                    <span class="user user-text">John wheeler</span>
-                    <div class="user" >
-                        <img src="https://pbs.twimg.com/profile_images/1196498675738071041/b9m1QfW2_400x400.jpg" alt="">
-                        
-                    </div>
-                    <span class="user user-text"  class="user">Katherin Nelson</span>
-                </div> -->
+                </section>
             </div>
         </nav>
         <section class="contenedor">
@@ -67,16 +76,20 @@
                     <p class="f">124,886 vistas</p>
                     <button class="ag">Agregar algo a mi lista</button>
                     <div class="com">
-                        <span class="icon">
-                            <i class="fas fa-cloud-upload-alt"></i>
-                        </span>
-                        <p>Compartir</p>
+                        <a href="">
+                            <span class="icon">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </span>
+                            <p>Compartir</p>
+                        </a>
                     </div>
                     <div class="share">
-                        <span class="icon">
-                            <i class="fas fa-share"></i>
-                        </span>
-                        <p>Guardar</p>
+                        <a href="">
+                            <span class="icon">
+                                <i class="fas fa-share"></i>
+                            </span>
+                            <p>Guardar</p>
+                        </a>
                     </div>
                     <button class="b1">Electronic</button>
                     <button class="b2">Roc</button>
@@ -94,5 +107,17 @@
             </section>
         </section>
     </main>
+
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("playlist");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 </body>
 </html>
